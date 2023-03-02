@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="./TextEditor.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" defer></script>
+    <script src="./TextEditor.js" defer></script>
+</head>
+
+<body>
+    <h1>CSS highlight API</h1>
+    <pre class="editor" id="code" lang="css">ul{
+    min-height: 0;
+  }
+  .sub {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  :checked ~ .sub {
+    grid-template-rows: 1fr;
+  }
+  .txt{
+    animation: color .001s .5 linear forwards;
+  }
+  @keyframes color {
+    from {
+      color: var(--c1)
+    }
+    to{
+      color: var(--c2)
+    }
+  }
+</pre>
+</body>
+
+</html>

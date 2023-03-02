@@ -1,0 +1,20 @@
+body {
+  background-color: azure;
+}
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body {
+  padding: 15px;
+}
+/* ::highlight(search-results) {
+  background-color: rgb(241, 122, 170);
+  color: white;
+} */
+
+::highlight(search-results) {
+  text-decoration: underline wavy #f06;
+}
